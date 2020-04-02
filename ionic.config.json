@@ -1,0 +1,7 @@
+{
+  "name": "rv",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

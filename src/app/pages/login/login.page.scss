@@ -1,0 +1,64 @@
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: 0 auto;
+    z-index: 2;
+    
+    &.top{
+        top:2%;
+    }
+    &.botton{
+        bottom: 10%;
+        span{
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0%;
+        }
+    }
+    img {
+        max-height:150px;
+    }
+}
+ion-slides{
+    top: 1%;
+    height: 100%;
+    .slide-inner{
+        width: 75%;
+        color:#ffffff;
+        background-color:#313b3d;
+        border-radius: 10px;
+        ion-item{
+            --background: #313b3d ;
+            --border-radius: 12px;
+            ion-input{
+                color: #ffffff;
+            }
+        }
+    } 
+    
+}
+.ocean{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 48%;
+    background-color: var(--ion-color-primary);
+
+    .waves{
+        position: absolute;
+        top: -98px;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-image: url('/assets/img/nuvem.png');
+        background-size: contain;
+        transition: all 0.5s;
+    }
+    
+}

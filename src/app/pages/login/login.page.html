@@ -1,0 +1,54 @@
+<ion-content class="swiper-no-swiping">
+    <div class="container top" align="center" [hidden]="keyboard.isVisible">
+        <img src="/assets/img/logo.png"/>
+        <ion-segment  (ionChange)="segmentChanged($event)" value="login">
+            <ion-segment-button value="login">
+              <ion-label>Login</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="cadastro">
+              <ion-label>Cadastro</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+    <ion-slides>
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+                <span>Login</span>
+                <ion-item class="ion-margin-top" line="none">
+                    <ion-input autofocus="true" type="email" placeholder="E-mail" ></ion-input>
+                </ion-item>
+                <ion-item class="ion-margin-top" line="none">
+                    <ion-input type="password" placeholder="Senha" ></ion-input>
+                </ion-item>
+                <ion-button class="ion-margin-top" color="light" expand="block">
+                    Entrar
+                </ion-button>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+                <span>Cadastrar</span>
+                <ion-item class="ion-margin-top" line="none">
+                    <ion-input type="nome" placeholder="Nome"></ion-input>
+                </ion-item>
+                <ion-item class="ion-margin-top" line="none">
+                    <ion-input type="email" placeholder="E-mail"></ion-input>
+                </ion-item>
+                <ion-item class="ion-margin-top" line="none">
+                    <ion-input type="password" placeholder="Senha"></ion-input>
+                </ion-item>
+                <ion-button class="ion-margin-top" color="light" expand="block">
+                   Cadastrar
+                </ion-button>
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+    <div class="ocean">
+        <div class="waves" [ngStyle]="{'background-position-x' : wavesPosition + 'px'}"></div>
+
+        <div class="container botton ion-text-center" [hidden]="keyboard.isVisible">
+            <span>Copyright©2020</span>
+        </div>
+    </div>
+</ion-content>
