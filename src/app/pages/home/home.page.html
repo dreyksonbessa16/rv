@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-title>Página Inicial</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <img src="/assets/rvsalao.jpg"/>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Bem vindo ao Salão RV</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      No salão RV você pode agendar seu horário e cortar seu cabelo em um abiente calmo com ar-condicionado.
+    </ion-card-content>
+  </ion-card>
+  <ion-tabs>
+    <ion-tab-bar slot="home">
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Página Inicial</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="agenda">
+        <ion-icon name="newspaper"></ion-icon>
+        <ion-label>Agenda</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Sobre</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
